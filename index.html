@@ -1,0 +1,224 @@
+<!doctype html>
+<!--
+============================================================================
+Nuova Vita — Landing / presentación institucional
+----------------------------------------------------------------------------
+Página de inicio del sitio. Presenta el centro y el sistema de gestión.
+Estructura general:
+    1. Header  -> logo + navegación + acceso al login
+    2. Hero    -> mensaje principal de bienvenida
+    3. Sobre Nosotros -> qué es Nuova Vita
+    4. Servicios / Funcionalidades -> tarjetas
+    5. Roles del sistema -> tarjetas
+    6. Contacto -> formulario
+    7. Footer
+============================================================================
+-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nuova Vita | Centro de Cuidado para Adultos Mayores</title>
+        <meta
+            name="description"
+            content="Nuova Vita: centro de descanso para adultos mayores. Sistema de historia clínica digital, informes de especialistas y control de asistencia del personal."
+        />
+
+        <!-- Tipografías del sitio (Poppins para títulos, Nunito Sans para texto) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Hoja de estilos propia -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <!-- ===================== 1. Encabezado y navegación ===================== -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">Nuova Vita</a>
+
+                <!-- Menú de anclas hacia las secciones de esta misma página -->
+                <nav class="main-nav" aria-label="Navegación principal">
+                    <ul>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#roles">Roles del Sistema</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Acceso al sistema interno -->
+                <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- ===================== 2. Hero (bienvenida) ===================== -->
+            <section class="hero">
+                <div class="container hero-content">
+                    <h1>Cuidado integral, gestión digital</h1>
+                    <p class="hero-subtitle">
+                        Un sistema pensado para centralizar la historia clínica,
+                        los informes de especialistas y el control de asistencia
+                        del personal de Nuova Vita.
+                    </p>
+                    <a href="#servicios" class="btn btn-secondary"
+                        >Conocer más</a
+                    >
+                </div>
+            </section>
+
+            <!-- ===================== 3. Sobre Nosotros ===================== -->
+            <section id="sobre-nosotros" class="section">
+                <div class="container">
+                    <h2>¿Qué es Nuova Vita?</h2>
+                    <p>
+                        Nuova Vita es un centro de descanso para adultos mayores
+                        que combina atención profesional con un enfoque humano.
+                        Este sistema acompaña esa tarea centralizando la
+                        información clínica y administrativa del centro en un
+                        solo lugar, con acceso seguro para cada rol del equipo.
+                    </p>
+                </div>
+            </section>
+
+            <!-- ===================== 4. Servicios / Funcionalidades ===================== -->
+            <section id="servicios" class="section section-alt">
+                <div class="container">
+                    <h2>Funcionalidades principales</h2>
+
+                    <!-- Grilla de tarjetas: una por funcionalidad del sistema -->
+                    <div class="card-grid">
+                        <article class="card">
+                            <h3>Historia Clínica Digital</h3>
+                            <p>
+                                Registro cronológico y foliado de informes,
+                                indicaciones médicas y actividades diarias de
+                                cada paciente.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h3>Control de Asistencia</h3>
+                            <p>
+                                Integración con reloj biométrico para el
+                                registro de marcados de entrada y salida del
+                                personal.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h3>Informes de Especialistas</h3>
+                            <p>
+                                Carga y consulta de informes por especialidad,
+                                con trazabilidad de quién registró cada dato.
+                            </p>
+                        </article>
+                        <article class="card">
+                            <h3>Seguridad y Confidencialidad</h3>
+                            <p>
+                                Accesos por rol, registro de auditoría y
+                                cumplimiento de la normativa vigente de datos de
+                                salud.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== 5. Roles del sistema ===================== -->
+            <section id="roles" class="section">
+                <div class="container">
+                    <h2>Roles del sistema</h2>
+
+                    <!-- Misma grilla, con la variante .card-role (franja salvia) -->
+                    <div class="card-grid">
+                        <article class="card card-role">
+                            <h3>Médico de Cabecera</h3>
+                            <p>
+                                Accede a la historia clínica completa de sus
+                                pacientes asignados, en el centro o de forma
+                                remota.
+                            </p>
+                        </article>
+                        <article class="card card-role">
+                            <h3>Especialista</h3>
+                            <p>
+                                Carga y consulta sus propios informes
+                                (kinesiología, nutrición, y otras
+                                especialidades) para cualquier paciente del
+                                centro.
+                            </p>
+                        </article>
+                        <article class="card card-role">
+                            <h3>Enfermería</h3>
+                            <p>
+                                Registra las actividades diarias: rutina,
+                                medicación, alimentación e incidencias.
+                            </p>
+                        </article>
+                        <article class="card card-role">
+                            <h3>Administración</h3>
+                            <p>
+                                Gestiona usuarios e infraestructura del sistema,
+                                sin acceso al contenido clínico.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== 6. Contacto ===================== -->
+            <section id="contacto" class="section section-alt">
+                <div class="container">
+                    <h2>Contacto</h2>
+
+                    <!-- Formulario de consulta (todavía sin envío real: maqueta) -->
+                    <form class="contact-form" action="#" method="post">
+                        <label for="nombre">Nombre</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            autocomplete="name"
+                            required
+                        />
+
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="tu@email.com"
+                            autocomplete="email"
+                            required
+                        />
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="4"
+                            placeholder="¿En qué te podemos ayudar?"
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="btn btn-primary">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- ===================== 7. Pie de página ===================== -->
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 Nuova Vita. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
