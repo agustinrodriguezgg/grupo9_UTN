@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  Nuova Vita — Pantalla de inicio de sesión
+  ----------------------------------------------------------------------------
+  Acceso al sistema interno. Layout de dos columnas:
+    - Panel izquierdo (.auth-panel): bienvenida, color terracota.
+    - Panel derecho (.auth-form-container): formulario de login.
+  El formulario es solo maqueta (todavía no valida ni envía datos).
+  ============================================================================
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión | Nuova Vita</title>
+
+  <!-- Tipografías del sitio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-body">
+
+  <!-- Contenedor centrado de las dos columnas -->
+  <div class="auth-wrapper">
+
+    <!-- ===================== Columna izquierda: bienvenida ===================== -->
+    <div class="auth-panel">
+      <a href="index.html" class="logo logo-light">Nuova Vita</a>
+      <h2>Bienvenido de nuevo</h2>
+      <p>Ingresá con tus credenciales para acceder al sistema.</p>
+    </div>
+
+    <!-- ===================== Columna derecha: formulario ===================== -->
+    <div class="auth-form-container">
+      <form class="auth-form">
+        <h1>Iniciar Sesión</h1>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="nombre@nuovavita.com" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="********" required>
+
+        <!-- Fila: recordar sesión + recuperar contraseña -->
+        <div class="form-row">
+          <label class="checkbox-label"><input type="checkbox" name="recordar"> Recordarme</label>
+          <a href="#" class="link-muted">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+      </form>
+
+      <!-- Vuelta a la landing -->
+      <a href="index.html" class="link-muted back-link">&larr; Volver al inicio</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
