@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <!--
   ============================================================================
-  Nuova Vita — Panel interno (dashboard)
+  Nuova Vita — TP2 · dashboard.html (panel interno)
   ----------------------------------------------------------------------------
-  Esqueleto de la pantalla que ve el personal una vez logueado.
-  Estructura:
-    - Barra lateral (.sidebar): navegación entre módulos del sistema.
-    - Contenido (.dashboard-content):
-        * Encabezado con el usuario.
-        * Tarjetas de estadísticas (valores de ejemplo con "--").
-        * Panel de actividad reciente (pendiente de conectar al backend).
-  Los datos son de muestra: es una maqueta, todavía sin lógica ni backend.
+  Técnica principal: CSS GRID -> .dashboard (barra lateral fija + contenido),
+  y .stats-grid (tarjetas de estadísticas). La barra usa Flexbox por dentro.
+  En móvil (media query) la barra lateral pasa arriba y en horizontal.
+  HTML semántico: <aside> <nav> <header> <main> <section> <article>.
   ============================================================================
 -->
 <html lang="es">
@@ -18,25 +14,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panel Interno | Nuova Vita</title>
-
-  <!-- Tipografías del sitio -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
-
-  <!-- Hoja de estilos propia -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="dashboard-body">
+<body>
 
-  <div class="dashboard-layout">
+  <div class="dashboard">
 
-    <!-- ===================== Barra lateral de navegación ===================== -->
+    <!-- ===================== Barra lateral (Flexbox interno) ===================== -->
     <aside class="sidebar">
-      <a href="index.html" class="logo logo-light">Nuova Vita</a>
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo de Nuova Vita" width="40" height="40">
+        <span>Nuova Vita</span>
+      </a>
 
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav" aria-label="Menú del panel">
         <ul>
-          <!-- La clase .active marca la sección en la que estamos parados -->
           <li><a href="#" class="active">Inicio</a></li>
           <li><a href="#">Pacientes</a></li>
           <li><a href="#">Historia Clínica</a></li>
@@ -47,14 +42,12 @@
         </ul>
       </nav>
 
-      <!-- Cerrar sesión vuelve al login -->
       <a href="login.html" class="logout-link">Cerrar sesión</a>
     </aside>
 
     <!-- ===================== Contenido principal ===================== -->
     <div class="dashboard-content">
 
-      <!-- Encabezado: título + usuario logueado -->
       <header class="dashboard-header">
         <h1>Panel Principal</h1>
         <div class="user-badge">Dr. Nombre Apellido</div>
@@ -62,8 +55,8 @@
 
       <main>
 
-        <!-- Tarjetas de estadísticas (valores de ejemplo) -->
-        <section class="stats-grid">
+        <!-- Estadísticas (CSS Grid) -->
+        <section class="stats-grid" aria-label="Estadísticas del centro">
           <article class="stat-card">
             <span class="stat-number">--</span>
             <span class="stat-label">Pacientes activos</span>
@@ -82,7 +75,7 @@
           </article>
         </section>
 
-        <!-- Panel de actividad reciente (pendiente de datos reales) -->
+        <!-- Actividad reciente -->
         <section class="panel">
           <h2>Actividad reciente</h2>
           <p class="placeholder-text">
