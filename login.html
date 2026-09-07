@@ -1,13 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ============================================================================
-  Nuova Vita — TP2 · login.html (inicio de sesión)
-  ----------------------------------------------------------------------------
-  Técnica principal: CSS GRID -> .auth-card en dos columnas (panel + formulario).
-  En pantallas chicas (media query) pasa a una sola columna.
-  Formulario maquetado con Flexbox en columna (.form). HTML semántico.
-  ============================================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -22,7 +13,6 @@
 
   <main class="auth-card">
 
-    <!-- Columna izquierda: bienvenida (panel terracota) -->
     <section class="auth-side">
       <a href="index.html" class="logo">
         <img src="img/logo.svg" alt="Logo de Nuova Vita" width="40" height="40">
@@ -32,7 +22,7 @@
       <p>Ingresá con tus credenciales para acceder al sistema de gestión.</p>
     </section>
 
-    <!-- Columna derecha: formulario de acceso -->
+    
     <section class="auth-main">
       <form class="form" aria-label="Formulario de inicio de sesión">
         <h1>Iniciar Sesión</h1>
