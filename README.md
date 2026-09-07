@@ -100,3 +100,21 @@ Resultado: el sitio se visualiza correctamente en **celular, tablet y computador
 - El desarrollo se hace sobre `dev` y se integra a `main` al finalizar.
 - Se generan Pull Requests asignando compañeros para revisión.
 - Commits frecuentes con mensajes claros y descriptivos.
+
+## Estrategias SEO (Search Engine Optimization)
+
+Para mejorar el posicionamiento y la accesibilidad del sitio en los motores de búsqueda, se aplicaron las siguientes estrategias SEO:
+
+- **Títulos descriptivos en cada página:** utilizamos la etiqueta `<title>` con textos relacionados al contenido de cada sección, facilitando que los buscadores identifiquen de qué trata cada página.
+
+- **Meta descripción:** incorporamos `<meta name="description">` con una breve descripción del sitio Nuova Vita y de su propósito.
+
+- **HTML semántico:** utilizamos etiquetas como `<header>`, `<nav>`, `<main>`, `<section>`, `<article>` y `<footer>`, permitiendo que los motores de búsqueda comprendan mejor la estructura del contenido.
+
+- **Jerarquía correcta de encabezados:** organizamos los títulos utilizando `<h1>`, `<h2>` y `<h3>` de forma ordenada, evitando saltos innecesarios en la jerarquía.
+
+- **Texto alternativo en imágenes:** las imágenes importantes incluyen el atributo `alt`, facilitando su interpretación por buscadores y mejorando la accesibilidad.
+
+- **Diseño Responsive:** el sitio se adapta a celulares, tablets y computadoras mediante Media Queries, favoreciendo la experiencia de usuario y el posicionamiento en dispositivos móviles.
+
+- **URLs y nombres de archivos claros:** utilizamos nombres simples y descriptivos como `index.html`, `login.html` y `dashboard.html`, manteniendo una estructura organizada del proyecto.
