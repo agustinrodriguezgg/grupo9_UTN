@@ -1,17 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ============================================================================
-  Nuova Vita — TP2 · index.html (landing institucional)
-  ----------------------------------------------------------------------------
-  HTML semántico: <header> <nav> <main> <section> <article> <footer>.
-  Secciones y técnica CSS que demuestra cada una:
-    · Hero        -> CSS Grid (texto + imagen)
-    · Servicios   -> CSS Grid (grilla de tarjetas)
-    · Roles       -> Flexbox (tarjetas con wrap)
-    · Contacto    -> Flexbox (formulario en columna)
-  Todos los estilos viven en el archivo externo style.css.
-  ============================================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -19,16 +6,13 @@
   <title>Nuova Vita | Centro de Cuidado para Adultos Mayores</title>
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
-  <!-- Tipografías: Poppins (títulos) + Nunito Sans (texto) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppgitins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
 
-  <!-- Hoja de estilos externa (obligatoria en el TP) -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
-  <!-- ===================== HEADER + NAV (Flexbox) ===================== -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
@@ -51,7 +35,6 @@
 
   <main>
 
-    <!-- ===================== HERO (CSS Grid: texto + imagen) ===================== -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
@@ -68,7 +51,6 @@
       </div>
     </section>
 
-    <!-- ===================== SOBRE NOSOTROS ===================== -->
     <section id="sobre-nosotros" class="section">
       <div class="container">
         <h2 class="section-title">¿Qué es Nuova Vita?</h2>
@@ -81,7 +63,6 @@
       </div>
     </section>
 
-    <!-- ===================== SERVICIOS (CSS Grid de tarjetas) ===================== -->
     <section id="servicios" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Funcionalidades principales</h2>
@@ -122,7 +103,6 @@
       </div>
     </section>
 
-    <!-- ===================== ROLES (Flexbox con wrap) ===================== -->
     <section id="roles" class="section">
       <div class="container">
         <h2 class="section-title">Roles del sistema</h2>
@@ -148,7 +128,6 @@
       </div>
     </section>
 
-    <!-- ===================== CONTACTO (Flexbox: formulario) ===================== -->
     <section id="contacto" class="section section-alt">
       <div class="container">
         <h2 class="section-title">Contacto</h2>
@@ -170,7 +149,6 @@
 
   </main>
 
-  <!-- ===================== FOOTER (Flexbox) ===================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Nuova Vita. Todos los derechos reservados.</p>

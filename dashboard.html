@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ============================================================================
-  Nuova Vita — TP2 · dashboard.html (panel interno)
-  ----------------------------------------------------------------------------
-  Técnica principal: CSS GRID -> .dashboard (barra lateral fija + contenido),
-  y .stats-grid (tarjetas de estadísticas). La barra usa Flexbox por dentro.
-  En móvil (media query) la barra lateral pasa arriba y en horizontal.
-  HTML semántico: <aside> <nav> <header> <main> <section> <article>.
-  ============================================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -23,7 +13,6 @@
 
   <div class="dashboard">
 
-    <!-- ===================== Barra lateral (Flexbox interno) ===================== -->
     <aside class="sidebar">
       <a href="index.html" class="logo">
         <img src="img/logo.svg" alt="Logo de Nuova Vita" width="40" height="40">
@@ -45,7 +34,6 @@
       <a href="login.html" class="logout-link">Cerrar sesión</a>
     </aside>
 
-    <!-- ===================== Contenido principal ===================== -->
     <div class="dashboard-content">
 
       <header class="dashboard-header">
@@ -55,7 +43,6 @@
 
       <main>
 
-        <!-- Estadísticas (CSS Grid) -->
         <section class="stats-grid" aria-label="Estadísticas del centro">
           <article class="stat-card">
             <span class="stat-number">--</span>
@@ -75,7 +62,6 @@
           </article>
         </section>
 
-        <!-- Actividad reciente -->
         <section class="panel">
           <h2>Actividad reciente</h2>
           <p class="placeholder-text">
