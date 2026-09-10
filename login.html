@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión | Nuova Vita</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="auth-body">
+
+  <main class="auth-card">
+
+    <section class="auth-side">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo de Nuova Vita" width="40" height="40">
+        <span>Nuova Vita</span>
+      </a>
+      <h2>Bienvenido de nuevo</h2>
+      <p>Ingresá con tus credenciales para acceder al sistema de gestión.</p>
+    </section>
+
+    
+    <section class="auth-main">
+      <form class="form" aria-label="Formulario de inicio de sesión">
+        <h1>Iniciar Sesión</h1>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="nombre@nuovavita.com" required>
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="********" required>
+
+        <div class="form-row">
+          <label class="checkbox-label"><input type="checkbox" name="recordar"> Recordarme</label>
+          <a href="#" class="link-muted">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+      </form>
+
+      <a href="index.html" class="link-muted back-link">&larr; Volver al inicio</a>
+    </section>
+
+  </main>
+
+</body>
+</html>

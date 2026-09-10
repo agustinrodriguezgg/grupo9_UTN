@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Interno | Nuova Vita</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo de Nuova Vita" width="40" height="40">
+        <span>Nuova Vita</span>
+      </a>
+
+      <nav class="sidebar-nav" aria-label="Menú del panel">
+        <ul>
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Pacientes</a></li>
+          <li><a href="#">Historia Clínica</a></li>
+          <li><a href="#">Informes de Especialistas</a></li>
+          <li><a href="#">Actividades Diarias</a></li>
+          <li><a href="#">Control de Asistencia</a></li>
+          <li><a href="#">Configuración</a></li>
+        </ul>
+      </nav>
+
+      <a href="login.html" class="logout-link">Cerrar sesión</a>
+    </aside>
+
+    <div class="dashboard-content">
+
+      <header class="dashboard-header">
+        <h1>Panel Principal</h1>
+        <div class="user-badge">Dr. Nombre Apellido</div>
+      </header>
+
+      <main>
+
+        <section class="stats-grid" aria-label="Estadísticas del centro">
+          <article class="stat-card">
+            <span class="stat-number">--</span>
+            <span class="stat-label">Pacientes activos</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">--</span>
+            <span class="stat-label">Informes pendientes</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">--</span>
+            <span class="stat-label">Turnos de hoy</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-number">--</span>
+            <span class="stat-label">Alertas</span>
+          </article>
+        </section>
+
+        <section class="panel">
+          <h2>Actividad reciente</h2>
+          <p class="placeholder-text">
+            Esta sección va a mostrar los últimos informes y actividades
+            cargadas. (Pendiente de conectar con el backend.)
+          </p>
+        </section>
+
+      </main>
+    </div>
+
+  </div>
+
+</body>
+</html>

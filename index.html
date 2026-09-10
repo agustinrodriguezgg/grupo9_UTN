@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuova Vita | Centro de Cuidado para Adultos Mayores</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppgitins:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Logo de Nuova Vita">
+        <span>Nuova Vita</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#roles">Roles</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="login.html" class="btn btn-primary">Iniciar Sesión</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Cuidado integral, gestión digital</h1>
+          <p>
+            Un sistema pensado para centralizar la historia clínica, los informes
+            de especialistas y el control de asistencia del personal de Nuova Vita.
+          </p>
+          <a href="#servicios" class="btn btn-secondary">Conocer más</a>
+        </div>
+        <div class="hero-img">
+          <img src="img/hero.svg" alt="Ilustración de un hogar con un corazón, símbolo de cuidado">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-nosotros" class="section">
+      <div class="container">
+        <h2 class="section-title">¿Qué es Nuova Vita?</h2>
+        <p style="max-width:60ch;margin-inline:auto;text-align:center;color:var(--color-text-light)">
+          Nuova Vita es un centro de descanso para adultos mayores que combina
+          atención profesional con un enfoque humano. Este sistema acompaña esa
+          tarea centralizando la información clínica y administrativa en un solo
+          lugar, con acceso seguro para cada rol del equipo.
+        </p>
+      </div>
+    </section>
+
+    <section id="servicios" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Funcionalidades principales</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <span class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5714E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3v3h6V3"/><path d="M8 11h8M8 15h5"/></svg>
+            </span>
+            <h3>Historia Clínica Digital</h3>
+            <p>Registro cronológico y foliado de informes, indicaciones médicas y actividades diarias de cada paciente.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5714E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <h3>Control de Asistencia</h3>
+            <p>Integración con reloj biométrico para el registro de marcados de entrada y salida del personal.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5714E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+            </span>
+            <h3>Informes de Especialistas</h3>
+            <p>Carga y consulta de informes por especialidad, con trazabilidad de quién registró cada dato.</p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C5714E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+            </span>
+            <h3>Seguridad y Confidencialidad</h3>
+            <p>Accesos por rol, registro de auditoría y cumplimiento de la normativa vigente de datos de salud.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roles" class="section">
+      <div class="container">
+        <h2 class="section-title">Roles del sistema</h2>
+
+        <div class="roles-list">
+          <article class="role-card">
+            <h3>Médico de Cabecera</h3>
+            <p>Accede a la historia clínica completa de sus pacientes asignados, en el centro o de forma remota.</p>
+          </article>
+          <article class="role-card">
+            <h3>Especialista</h3>
+            <p>Carga y consulta sus propios informes (kinesiología, nutrición, entre otras) para cualquier paciente.</p>
+          </article>
+          <article class="role-card">
+            <h3>Enfermería</h3>
+            <p>Registra las actividades diarias: rutina, medicación, alimentación e incidencias.</p>
+          </article>
+          <article class="role-card">
+            <h3>Administración</h3>
+            <p>Gestiona usuarios e infraestructura del sistema, sin acceso al contenido clínico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+
+        <form class="form" aria-label="Formulario de contacto">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com">
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?"></textarea>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Nuova Vita. Todos los derechos reservados.</p>
+      <nav aria-label="Enlaces del pie">
+        <a href="#sobre-nosotros">Sobre Nosotros</a> ·
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
